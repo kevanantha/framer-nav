@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: 180, 1%, 14%;
+  --background: 225, 22%, 96%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: 225, 22%, 96%;
+    --background: 180, 1%, 14%;
+  }
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
